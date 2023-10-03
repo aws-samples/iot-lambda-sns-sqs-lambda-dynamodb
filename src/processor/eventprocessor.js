@@ -28,5 +28,9 @@ exports.handler = async (event) => {
     const result = await sns.publish(params).promise()
     console.log(result)
   }
+  else{
+    console.log("This is not a supported MetricType!")
+  }
+    
 
 }

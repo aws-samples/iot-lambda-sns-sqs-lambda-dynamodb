@@ -100,7 +100,7 @@ Resources:
   IoTMetricsEventProcessorFunction:
     Type: AWS::Serverless::Function 
     Properties:
-      CodeUri: src/
+      CodeUri: src/processor/
       Handler: eventprocessor.handler
       Runtime: nodejs16.x
       Timeout: 3
@@ -132,7 +132,7 @@ Resources:
   AllFilteredEventConsumerFunction:
     Type: AWS::Serverless::Function 
     Properties:
-      CodeUri: src/
+      CodeUri: src/consumer/
       Handler: allfilteredeventconsumer.handler
       Runtime: nodejs16.x
       Timeout: 3

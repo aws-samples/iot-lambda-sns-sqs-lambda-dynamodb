@@ -94,14 +94,11 @@ The easiest way to test is using the MQTT test client.
 
 ## Cleanup
  
-1. Delete the stack
+ Delete the stack
     ```bash
-    aws cloudformation delete-stack --stack-name STACK_NAME
+    sam delete
     ```
-2. Confirm the stack has been deleted
-    ```bash
-    aws cloudformation list-stacks --query "StackSummaries[?contains(StackName,'STACK_NAME')].StackStatus"
-    ```
+
 ----
 
 ## Security
