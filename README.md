@@ -18,23 +18,23 @@ Important: this application uses various AWS services and there are costs associ
     ``` 
     git clone https://github.com/aws-samples/iot-lambda-sns-sqs-lambda-dynamodb.git
     ```
-1. Change directory to the below directory:
+2. Change directory to the below directory:
     ```
     cd iot-lambda-sns-sqs-lambda-dynamodb
     ```
-1. From the command line, use AWS SAM to build and deploy the AWS resources  as specified in the template.yml file:
+3. From the command line, use AWS SAM to build and deploy the AWS resources  as specified in the template.yml file:
     ```
     sam build
     sam deploy --guided
     ```
-1. During the prompts:
+4. During the prompts:
     * Enter a stack name
     * Enter the desired AWS Region
     * Allow SAM CLI to create IAM roles with the required permissions.
 
     Once you have run `sam deploy -guided` mode once and saved arguments to a configuration file (samconfig.toml), you can use `sam deploy` in future to use these defaults.
 
-1. Note the outputs from the SAM deployment process. These contain the resource names and/or ARNs which are used for testing.
+5. Note the outputs from the SAM deployment process. These contain the resource names and/or ARNs which are used for testing.
 
 ## How it works
 
@@ -94,8 +94,8 @@ The easiest way to test is using the MQTT test client.
 
 ## Cleanup
  
- Delete the stack
-    ```bash
+ Delete the stack:
+    ```
     sam delete
     ```
 
